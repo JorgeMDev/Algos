@@ -78,7 +78,7 @@ function oddOccurrencesInArray(nums) {
         }
     }
     for (let key in obj){
-        if (obj[key]%2!==0){
+        if (obj[key]%2!==0){ //checks if the value has a pair, if not. return it
             return key
         }
     }
