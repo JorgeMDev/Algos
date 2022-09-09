@@ -49,14 +49,16 @@ const squareMatrix1 = [
     leftright = 0
     rigthleft = 0
     Totaldiff = 0
+
+    //calculate left to right diagonal
     for (let i=0; i < sqrMatrix.length;i++){
         leftright += sqrMatrix[i][i]
     }
-
+    //calculate right to left diagonal
     for (let i=0; i < sqrMatrix.length;i++){
         rigthleft += sqrMatrix[i][sqrMatrix.length-1-i]
     }
-
+    //absolute difference
     Totaldiff = Math.abs(leftright - rigthleft)
     return Totaldiff
   }
