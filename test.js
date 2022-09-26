@@ -5,4 +5,6 @@ var peopleArr =[
     {"firstName":"Maria", "lastName":"Smith","age":62,"hairColor":"Brown"}
   ]
 
-peopleArr.map()
+let total = peopleArr.map((eachObj)=>eachObj.age)
+
+console.log(total)
